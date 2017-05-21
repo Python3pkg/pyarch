@@ -1,4 +1,4 @@
-import gates
+from . import gates
 import sys
 sys.path.insert(0, '../utils')
 import new

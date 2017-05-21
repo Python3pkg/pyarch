@@ -29,4 +29,4 @@ out = transport.wires(4)
 hware = GrayCode_CVT(inputA,out)
 iohandler = ioManager.StringIO(hware)
 
-print iohandler.input('1001')
+print(iohandler.input('1001'))

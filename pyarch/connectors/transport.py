@@ -10,7 +10,7 @@ from hiatus import set_interval,clear_interval
 
 def wires(number):
     wireSet = list()
-    for i in xrange(0,number):
+    for i in range(0,number):
         wireSet.append(Wire(None))
     return wireSet
 

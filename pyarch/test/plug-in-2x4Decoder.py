@@ -13,4 +13,4 @@ output = transport.wires(4)
 
 iohandler = ioManager.StringIO(decoders.Decoder2x4(inputA,inputB,output))
 
-print iohandler.input('0','1')
+print(iohandler.input('0','1'))

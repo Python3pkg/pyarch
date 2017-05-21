@@ -1,4 +1,4 @@
-import gates
+from . import gates
 import sys
 sys.path.insert(0, '../utils')
 import new
@@ -52,7 +52,7 @@ class PipoAdder(new.Hardware,object):
         self.internalWiring = transport.wires(size)
         if size > 1:
             self.components.append(FullAdder([x[0], y[0], self.internalWiring[0]], [self.internalWiring[1], s[size]]))
-            for i in xrange(size-1):
+            for i in range(size-1):
                 self.components.append(FullAdder([x[i], y[i], self.internalWiring[i]], [self.internalWiring[i+1], s[size-i]]))
             self.components.append(FullAdder([x[size-1], y[size-1], self.internalWiring[size-1]], [s[0], s[1]]))
         else:

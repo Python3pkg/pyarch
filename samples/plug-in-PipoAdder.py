@@ -8,4 +8,4 @@ out = transport.wires(5)
 hware = arithmetics.PipoAdder(inputA,inputB,out)
 iohandler = ioManager.StringIO(hware)
 
-print iohandler.input('1111','1111')
+print(iohandler.input('1111','1111'))
